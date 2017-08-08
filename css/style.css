@@ -1,1 +1,55 @@
 /* Stylesheet for index.html */
+
+@font-face {
+  font-family: Asap-Bold;
+  src: url(../fonts/Asap-Bold.ttf);
+}
+
+@font-face {
+  font-family: Asap-Regular;
+  src: url(../fonts/Asap-Regular.ttf);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px;
+}
+
+.nav-bar .nav-text,
+.nav-bar .nav-icon {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-text div,
+.nav-icon div {
+    padding: 1px 8px 1px 8px;
+}
+
+.nav-text {
+  font-family: Asap-Bold;
+  font-size: 18pt;
+}
+
+#nav-home {
+  color: #333333;
+}
+
+#nav-about {
+  color: #999999;
+}
