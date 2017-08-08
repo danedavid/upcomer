@@ -126,7 +126,7 @@ input:-ms-input-placeholder {
   background: rgba( 255, 255, 255, 0.3);
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
-  padding-left: calc(width);
+  padding-left: 10px;
 }
 
 .welcome-banner .email-ok {
