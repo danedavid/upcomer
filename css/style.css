@@ -135,3 +135,31 @@ input:-ms-input-placeholder {
   color: #ffffff;
   padding: 0px 0px 40px 0px;
 }
+
+#feed-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 10px 0px 0px 0px;
+}
+
+/* styling of feed banner elements */
+#feed-banner .content {
+  text-align: center;
+}
+
+#feed-banner #feed-banner-header {
+  font-family: Asap-Bold;
+  font-size: 36pt;
+  color: #333333;
+  margin-top: 50px;
+  padding: 20px 0px 20px 0px;
+}
+
+#feed-banner #feed-banner-text {
+  font-family: Asap-Regular;
+  font-size: 20pt;
+  color: #999999;
+  padding: 20px 0px 20px 0px;
+}
