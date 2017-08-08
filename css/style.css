@@ -276,3 +276,16 @@ input:-ms-input-placeholder {
 #hashtag-banner img {
   align-self: baseline;
 }
+
+/* styling for footer */
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1% 0 1% 0;
+}
+
+.footer img {
+  padding: 0 0.5% 0 0.5%;
+}
