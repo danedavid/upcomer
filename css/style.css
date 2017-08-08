@@ -28,6 +28,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 30px 0px 0px 0px;
 }
 
 .font-asap-bold {
@@ -43,7 +44,6 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  padding: 5px;
 }
 
 .nav-bar .nav-text,
@@ -54,7 +54,7 @@ body {
 
 .nav-text div,
 .nav-icon div {
-    padding: 1px 8px 1px 8px;
+    padding: 5px 10px 5px 10px;
 }
 
 .nav-text {
@@ -72,7 +72,6 @@ body {
 /* styling for welcome banner elements */
 .welcome-banner {
   background: url(../images/bg1_repeat.png);
-  padding: 10px 0px 0px 0px;
 }
 
 .welcome-banner .content {
@@ -127,7 +126,7 @@ input:-ms-input-placeholder {
   background: rgba( 255, 255, 255, 0.3);
   border-top-left-radius: 30px;
   border-bottom-left-radius: 30px;
-  padding-left: 10px;
+  padding-left: calc(width);
 }
 
 .welcome-banner .email-ok {
@@ -146,7 +145,6 @@ input:-ms-input-placeholder {
 
 .feed-banner {
   background-color: #ffffff;
-  padding: 10px 0px 0px 0px;
 }
 
 /* styling of feed banner elements */
@@ -170,7 +168,6 @@ input:-ms-input-placeholder {
 /* styling of feature list elements */
 .feature-list {
   background-color: #f5f5f5;
-  padding: 70px 0px 70px 0px;
 }
 
 .feature-list .row {
@@ -225,7 +222,6 @@ input:-ms-input-placeholder {
   background: url(../images/bg2.png);
   color: #ffffff;
   text-align: center;
-  padding: 10px 0px 0px 0px;
 }
 
 .share-banner .share-content-header {
@@ -250,7 +246,6 @@ input:-ms-input-placeholder {
 .hashtag-banner {
   flex-direction: row;
   background-color: #333333;
-  padding: 30px 0px 0px 0px;
 }
 
 .hashtag-banner .hashtag-text {
@@ -267,9 +262,9 @@ input:-ms-input-placeholder {
 /* styling for footer */
 .footer {
   flex-direction: row;
-  padding: 1% 0 1% 0;
+  padding: 10px 0 10px 0;
 }
 
 .footer img {
-  padding: 0 0.5% 0 0.5%;
+  padding: 0 10px 0 10px;
 }
