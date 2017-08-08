@@ -14,12 +14,28 @@ body {
   padding: 0;
   margin: 0;
 }
+
 .container {
   display: flex;
   flex-direction: column;
   width: 100%;
   padding: 0;
   margin: 0;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.font-asap-bold {
+  font-family: Asap-Bold;
+}
+
+.font-asap-regular {
+  font-family: Asap-Regular;
 }
 
 .nav-bar {
@@ -42,50 +58,45 @@ body {
 }
 
 .nav-text {
-  font-family: Asap-Bold;
   font-size: 18pt;
 }
 
-#nav-home {
+.nav-home {
   color: #333333;
 }
 
-#nav-about {
+.nav-about {
   color: #999999;
 }
 
 /* styling for welcome banner elements */
-#welcome {
-  display: flex;
-  align-items: center;
+.welcome-banner {
   background: url(../images/bg1_repeat.png);
-  justify-content: center;
   padding: 10px 0px 0px 0px;
 }
 
-#welcome .content {
+.welcome-banner .content {
   text-align: center;
   color: #ffffff;
 }
 
-#welcome #content-header {
-  font-family: Asap-Bold;
+.welcome-banner .content-header {
   font-size: 52pt;
   padding: 30px 0px 30px 0px;
 }
 
-#welcome #content-text {
+.welcome-banner .content-text {
   font-family: Asap-Regular;
   font-size: 24pt;
   padding: 30px 0px 30px 0px;
 }
 
-#welcome #email-box {
+.welcome-banner .email-box {
   padding: 30px 0px 30px 0px;
 }
 
-#welcome #email-text,
-#welcome #email-ok {
+.welcome-banner .email-text,
+.welcome-banner .email-ok {
   font-family: Asap-Regular;
   font-size: 20.3pt;
   color: #ffffff;
@@ -113,7 +124,7 @@ input:-ms-input-placeholder {
   color: #ffffff !important;
 }
 
-#welcome #email-text {
+.welcome-banner .email-text {
   width: 269px;
   background: rgba( 255, 255, 255, 0.3);
   border-top-left-radius: 30px;
@@ -121,7 +132,7 @@ input:-ms-input-placeholder {
   padding-left: 10px;
 }
 
-#welcome #email-ok {
+.welcome-banner .email-ok {
   width: 81px;
   background-color: #2ECC71;
   border-top-right-radius: 30px;
@@ -129,35 +140,31 @@ input:-ms-input-placeholder {
   margin-left: -4px;
 }
 
-#sub-text {
+.sub-text {
   font-family: Asap-Regular;
   font-size: 16pt;
   color: #ffffff;
   padding: 0px 0px 40px 0px;
 }
 
-#feed-banner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.feed-banner {
   background-color: #ffffff;
   padding: 10px 0px 0px 0px;
 }
 
 /* styling of feed banner elements */
-#feed-banner .content {
+.feed-banner .content {
   text-align: center;
 }
 
-#feed-banner #feed-banner-header {
-  font-family: Asap-Bold;
+.feed-banner .feed-banner-header {
   font-size: 36pt;
   color: #333333;
   margin-top: 50px;
   padding: 20px 0px 20px 0px;
 }
 
-#feed-banner #feed-banner-text {
+.feed-banner .feed-banner-text {
   font-family: Asap-Regular;
   font-size: 20pt;
   color: #999999;
@@ -165,16 +172,12 @@ input:-ms-input-placeholder {
 }
 
 /* styling of feature list elements */
-#feature-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.feature-list {
   background-color: #f5f5f5;
   padding: 70px 0px 70px 0px;
 }
 
-#feature-list .row {
+.feature-list .row {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -182,72 +185,66 @@ input:-ms-input-placeholder {
   padding: 30px 0px 30px 0px;
 }
 
-#feature-list .row .row-content {
+.feature-list .row .row-content {
   width: 50%;
 }
 
-#feature-list .row .row-img {
+.feature-list .row .row-img {
   display: flex;
   width: 50%;
 }
 
-#feature-list .row #row-img-1 {
+.feature-list .row .row-img-1 {
   justify-content: flex-end;
   padding-right: 30px;
 }
 
-#feature-list .row #row-img-2 {
+.feature-list .row .row-img-2 {
   justify-content: flex-start;
   padding-left: 30px;
 }
 
-#feature-list .row-header {
-  font-family: Asap-Bold;
+.feature-list .row-header {
   font-size: 36pt;
   color: #333333;
 }
 
-#feature-list .row-text {
+.feature-list .row-text {
   font-family: Asap-Regular;
   font-size: 20pt;
   color: #999999;
 }
 
-#row-text-1 {
+.row-text-1 {
   text-align: left;
   padding-left: 20px;
 }
 
-#row-text-2 {
+.row-text-2 {
   text-align: right;
   padding-right: 20px;
 }
 
 /* styling for share banner elements */
-#share-banner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.share-banner {
   background: url(../images/bg2.png);
   color: #ffffff;
   text-align: center;
   padding: 10px 0px 0px 0px;
 }
 
-#share-banner .share-content-header {
-  font-family: Asap-Bold;
+.share-banner .share-content-header {
   font-size: 36pt;
   padding: 50px 0px 30px 0px;
 }
 
-#share-banner .share-content-text {
+.share-banner .share-content-text {
   font-family: Asap-Regular;
   font-size: 24pt;
   padding: 20px 0px 30px 0px;
 }
 
-#share-banner .share-button-panel {
+.share-banner .share-button-panel {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -256,33 +253,26 @@ input:-ms-input-placeholder {
 }
 
 /* styling for hashtag banner elements */
-#hashtag-banner {
-  display: flex;
+.hashtag-banner {
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
   background-color: #333333;
   padding: 30px 0px 0px 0px;
 }
 
-#hashtag-banner #hashtag-text {
-  font-family: Asap-Bold;
+.hashtag-banner .hashtag-text {
   font-size: 48pt;
   color: #ffffff;
   margin-bottom: 25px;
   margin-left: -70px;
 }
 
-#hashtag-banner img {
+.hashtag-banner img {
   align-self: baseline;
 }
 
 /* styling for footer */
 .footer {
-  display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
   padding: 1% 0 1% 0;
 }
 
