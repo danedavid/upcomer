@@ -78,6 +78,7 @@ body {
 .welcome-banner .content {
   text-align: center;
   color: #ffffff;
+  max-width: 850px;
 }
 
 .welcome-banner .content-header {
@@ -175,7 +176,7 @@ input:-ms-input-placeholder {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 100%;
+  max-width: 1366px;
   padding: 30px 0px 30px 0px;
 }
 
@@ -233,6 +234,7 @@ input:-ms-input-placeholder {
 .share-banner .share-content-text {
   font-size: 24pt;
   padding: 20px 20%;
+  max-width: 800px;
 }
 
 .share-banner .share-button-panel {
@@ -294,9 +296,16 @@ hr {
   justify-content: space-around;
 }
 
+.about-banner .content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 1200px;
+}
+
 .about-banner .about-content {
-  max-width: 600px;
-  margin: 70px 0px;
+  max-width: 660px;
+  margin: 70px 150px 70px 0px;
 }
 
 .about-banner .about-header {
