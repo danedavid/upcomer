@@ -29,7 +29,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px 0px 0px 0px;
+  padding-top: 30px;
 }
 
 .font-asap-bold {
@@ -73,6 +73,8 @@ body {
 /* styling for welcome banner elements */
 .welcome-banner {
   background: url(../images/bg1_repeat.png);
+  padding-left: 18%;
+  padding-right: 18%;
 }
 
 .welcome-banner .content {
@@ -163,7 +165,7 @@ input:-ms-input-placeholder {
 .feed-banner .feed-banner-text {
   font-size: 20pt;
   color: #999999;
-  padding: 20px 0px 20px 0px;
+  padding: 20px 24%;
 }
 
 /* styling of feature list elements */
@@ -232,7 +234,7 @@ input:-ms-input-placeholder {
 
 .share-banner .share-content-text {
   font-size: 24pt;
-  padding: 20px 0px 30px 0px;
+  padding: 20px 20%;
 }
 
 .share-banner .share-button-panel {
@@ -456,7 +458,7 @@ hr {
 }
 
 .recruit-banner {
-  padding: 90px 120px;
+  padding: 90px 9%;
   text-align: center;
 }
 
