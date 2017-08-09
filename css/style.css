@@ -11,8 +11,6 @@
 }
 
 body {
-  overflow-x: hidden;
-  padding: 0;
   margin: 0;
 }
 
@@ -247,15 +245,20 @@ input:-ms-input-placeholder {
 
 /* styling for hashtag banner elements */
 .hashtag-banner {
-  flex-direction: row;
   background-color: #333333;
 }
 
+.hashtag-banner .img-wrapper {
+  position: relative;
+  width: 800px;
+}
+
 .hashtag-banner .hashtag-text {
+  position: absolute;
+  top: 85px;
+  left: 160px;
   font-size: 48pt;
   color: #ffffff;
-  margin-bottom: 25px;
-  margin-left: -70px;
 }
 
 .hashtag-banner img {
@@ -265,11 +268,15 @@ input:-ms-input-placeholder {
 /* styling for footer */
 .footer {
   flex-direction: row;
-  padding: 10px 0 10px 0;
+  padding: 1% 0;
+}
+
+.footer .footer-wrapper {
+  padding: 10px 0;
 }
 
 .footer img {
-  padding: 0 10px 0 10px;
+  padding: 0 10px;
 }
 
 /* styling for about page */
@@ -278,6 +285,7 @@ input:-ms-input-placeholder {
 hr {
   height: 1px;
   width: 100%;
+  border: 0;
   background-color: #999999;
 }
 
