@@ -1,19 +1,14 @@
 /* Stylesheet for index.html */
 
-@font-face {
-  font-family: Asap-Bold;
-  src: url(../fonts/Asap-Bold.ttf);
-}
-
-@font-face {
-  font-family: Asap-Regular;
-  src: url(../fonts/Asap-Regular.ttf);
+html {
+  display: flex;
 }
 
 body {
-  padding: 0;
+  display: flex;
   margin: 0;
 }
+
 .container {
   display: flex;
   flex-direction: column;
@@ -22,12 +17,40 @@ body {
   margin: 0;
 }
 
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.font-asap-bold {
+  font-family: 'Asap', sans-serif;
+  font-weight: bold;
+}
+
+.font-asap-regular {
+  font-family: 'Asap', sans-serif;
+}
+
+.link-img {
+  opacity: 0.9;
+}
+
+.link-img:hover {
+  opacity: 1;
+}
+
+.link:hover {
+  cursor: pointer;
+}
+
 .nav-bar {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  padding: 5px;
 }
 
 .nav-bar .nav-text,
@@ -38,55 +61,51 @@ body {
 
 .nav-text div,
 .nav-icon div {
-    padding: 1px 8px 1px 8px;
+    padding: 5px 2px;
+    margin: 0px 5px;
 }
 
 .nav-text {
-  font-family: Asap-Bold;
   font-size: 18pt;
 }
 
-#nav-home {
+.nav-current {
   color: #333333;
 }
 
-#nav-about {
+.nav-other {
   color: #999999;
 }
 
 /* styling for welcome banner elements */
-#welcome {
-  display: flex;
-  align-items: center;
+.welcome-banner {
   background: url(../images/bg1_repeat.png);
-  justify-content: center;
-  padding: 10px 0px 0px 0px;
+  padding-left: 18%;
+  padding-right: 18%;
 }
 
-#welcome .content {
+.welcome-banner .content {
   text-align: center;
   color: #ffffff;
+  max-width: 850px;
 }
 
-#welcome #content-header {
-  font-family: Asap-Bold;
+.welcome-banner .content-header {
   font-size: 52pt;
   padding: 30px 0px 30px 0px;
 }
 
-#welcome #content-text {
-  font-family: Asap-Regular;
+.welcome-banner .content-text {
   font-size: 24pt;
   padding: 30px 0px 30px 0px;
 }
 
-#welcome #email-box {
+.welcome-banner .email-box {
   padding: 30px 0px 30px 0px;
 }
 
-#welcome #email-text,
-#welcome #email-ok {
-  font-family: Asap-Regular;
+.welcome-banner .email-text,
+.welcome-banner .email-ok {
   font-size: 20.3pt;
   color: #ffffff;
   height: 60px;
@@ -113,7 +132,7 @@ input:-ms-input-placeholder {
   color: #ffffff !important;
 }
 
-#welcome #email-text {
+.welcome-banner .email-text {
   width: 269px;
   background: rgba( 255, 255, 255, 0.3);
   border-top-left-radius: 30px;
@@ -121,7 +140,7 @@ input:-ms-input-placeholder {
   padding-left: 10px;
 }
 
-#welcome #email-ok {
+.welcome-banner .email-ok {
   width: 81px;
   background-color: #2ECC71;
   border-top-right-radius: 30px;
@@ -129,128 +148,356 @@ input:-ms-input-placeholder {
   margin-left: -4px;
 }
 
-#sub-text {
-  font-family: Asap-Regular;
+.sub-text {
   font-size: 16pt;
   color: #ffffff;
   padding: 0px 0px 40px 0px;
 }
 
-#feed-banner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.feed-banner {
   background-color: #ffffff;
-  padding: 10px 0px 0px 0px;
 }
 
 /* styling of feed banner elements */
-#feed-banner .content {
+.feed-banner .content {
   text-align: center;
 }
 
-#feed-banner #feed-banner-header {
-  font-family: Asap-Bold;
+.feed-banner .feed-banner-header {
   font-size: 36pt;
   color: #333333;
   margin-top: 50px;
   padding: 20px 0px 20px 0px;
 }
 
-#feed-banner #feed-banner-text {
-  font-family: Asap-Regular;
+.feed-banner .feed-banner-text {
   font-size: 20pt;
   color: #999999;
-  padding: 20px 0px 20px 0px;
+  padding: 20px 24%;
 }
 
 /* styling of feature list elements */
-#feature-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.feature-list {
   background-color: #f5f5f5;
-  padding: 70px 0px 70px 0px;
 }
 
-#feature-list .row {
+.feature-list .row {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  width: 100%;
+  max-width: 1366px;
   padding: 30px 0px 30px 0px;
 }
 
-#feature-list .row .row-content {
+.feature-list .row .row-content {
   width: 50%;
 }
 
-#feature-list .row .row-img {
+.feature-list .row .row-img {
   display: flex;
   width: 50%;
 }
 
-#feature-list .row #row-img-1 {
+.feature-list .row .row-img-1 {
   justify-content: flex-end;
   padding-right: 30px;
 }
 
-#feature-list .row #row-img-2 {
+.feature-list .row .row-img-2 {
   justify-content: flex-start;
   padding-left: 30px;
 }
 
-#feature-list .row-header {
-  font-family: Asap-Bold;
+.feature-list .row-header {
   font-size: 36pt;
   color: #333333;
 }
 
-#feature-list .row-text {
-  font-family: Asap-Regular;
+.feature-list .row-text {
   font-size: 20pt;
   color: #999999;
 }
 
-#row-text-1 {
+.row-text-1 {
   text-align: left;
   padding-left: 20px;
 }
 
-#row-text-2 {
+.row-text-2 {
   text-align: right;
   padding-right: 20px;
 }
 
 /* styling for share banner elements */
-#share-banner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.share-banner {
   background: url(../images/bg2.png);
   color: #ffffff;
   text-align: center;
-  padding: 10px 0px 0px 0px;
 }
 
-#share-banner .share-content-header {
-  font-family: Asap-Bold;
+.share-banner .share-content-header {
   font-size: 36pt;
   padding: 50px 0px 30px 0px;
 }
 
-#share-banner .share-content-text {
-  font-family: Asap-Regular;
+.share-banner .share-content-text {
   font-size: 24pt;
-  padding: 20px 0px 30px 0px;
+  padding: 20px 20%;
+  max-width: 800px;
 }
 
-#share-banner .share-button-panel {
+.share-banner .share-button-panel {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 70%;
   padding: 40px 0px 80px 0px;
 }
+
+/* styling for hashtag banner elements */
+.hashtag-banner {
+  background-color: #333333;
+}
+
+.hashtag-banner .img-wrapper {
+  position: relative;
+  width: 800px;
+}
+
+.hashtag-banner .hashtag-text {
+  position: absolute;
+  top: 85px;
+  left: 160px;
+  font-size: 48pt;
+  color: #ffffff;
+}
+
+.hashtag-banner img {
+  align-self: baseline;
+}
+
+/* styling for footer */
+.footer {
+  flex-direction: row;
+  padding: 1% 0;
+}
+
+.footer .footer-wrapper {
+  padding: 10px 0;
+}
+
+.footer img {
+  padding: 0 10px;
+}
+
+/* styling for about page */
+
+/* styling for about banner elements */
+hr {
+  height: 1px;
+  width: 100%;
+  border: 0;
+  background-color: #999999;
+}
+
+.about-banner {
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.about-banner .content {
+  display: flex;
+  max-width: 1100px;
+  margin-bottom: 70px;
+}
+
+.about-banner .about-content {
+  max-width: 660px;
+}
+
+.about-banner .about-header {
+  font-size: 36pt;
+  color: #333333;
+  padding-bottom: 30px;
+}
+
+.about-content .about-text {
+  font-size: 20pt;
+  color: #999999;
+}
+
+.about-banner img {
+  align-self: flex-end;
+}
+
+/* styling for timeline elements */
+.timeline-banner {
+  position: relative;
+  padding: 0px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.half-section {
+  position: relative;
+  background-color: #f5f5f5;
+  width: 49.8%;
+  height: 550px;
+  padding-bottom: 40px;
+}
+
+.half-section .dialog {
+  position: absolute;
+  background-color: #ffffff;
+  max-width: 500px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+}
+
+.hs-1 .dialog {
+  right: 50px;
+}
+
+.hs-2 .dialog {
+  left: 50px;
+}
+
+.half-section .dialog .dlg-header {
+  align-self: flex-start;
+  font-size: 22pt;
+  color: #333333;
+}
+
+.half-section .dialog .dlg-content {
+  font-size: 20pt;
+  color: #999999;
+}
+
+.dlg-1 {
+  top: 137px;   /* = 120+15+2  [ top(.small-circle) + radius(.small-circle) + border(.small-circle)/2 ]     */
+  transform: translateY(-50%);
+}
+
+.dlg-2 {
+  top: 237px;
+  transform: translateY(-50%);
+}
+
+.dlg-3 {
+  top: 337px;
+  transform: translateY(-50%);
+}
+
+.dlg-4 {
+  top: 437px;
+  transform: translateY(-50%);
+}
+
+.dialog .triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hs-1 .dialog .triangle {
+  left: 99%;
+  border-left: 15px solid #ffffff;
+}
+
+.hs-2 .dialog .triangle {
+  right: 99%;
+  border-right: 15px solid #ffffff;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  z-index: 2;
+
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.found-year-circle {
+  top: -45px;
+  background-color: #f5f5f5;
+  color: #888888;
+  width: 80px;
+  height: 80px;
+  border: 5px solid #ffffff;
+}
+
+.small-circle {
+  width: 30px;
+  height: 30px;
+  border: 4px solid #f5f5f5;
+}
+
+.small-circle-1 {
+  top: 120px;
+  background-color: #f7d4d4;
+}
+
+.small-circle-2 {
+  top: 220px;
+  background-color: #efa9a9;
+}
+
+.small-circle-3 {
+  top: 320px;
+  background-color: #eb9393;
+}
+
+.small-circle-4 {
+  top: 420px;
+  background-color: #e36868;
+}
+
+.now-circle {
+  bottom: -45px;
+  background-color: #db3d3d;
+  color: #ffffff;
+  width: 80px;
+  height: 80px;
+  border: 5px solid #ffffff;
+}
+
+.recruit-banner {
+  padding: 90px 9%;
+  text-align: center;
+}
+
+.recruit-banner .recruit-header {
+  font-size: 36pt;
+  color: #333333;
+  margin: 25px 0px;
+}
+
+.recruit-banner .recruit-text {
+  font-size: 20pt;
+  color: #999999;
+  margin: 25px 0px;
+}
+
+.mailto-button {
+  width: 310px;
+  height: 60px;
+  background-color: #2ecc71;
+  border: 0;
+  border-radius: 30px;
+  outline: 0;
+  font-size: 20.3pt;
+  color: #ffffff;
+  margin-top: 25px;
+}
+
+/* end of stylesheet */
