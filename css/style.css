@@ -1,15 +1,5 @@
 /* Stylesheet for index.html */
 
-@font-face {
-  font-family: Asap-Bold;
-  src: url(../fonts/Asap-Bold.ttf);
-}
-
-@font-face {
-  font-family: Asap-Regular;
-  src: url(../fonts/Asap-Regular.ttf);
-}
-
 body {
   margin: 0;
 }
@@ -31,11 +21,12 @@ body {
 }
 
 .font-asap-bold {
-  font-family: Asap-Bold;
+  font-family: 'Asap', sans-serif;
+  font-weight: bold;
 }
 
 .font-asap-regular {
-  font-family: Asap-Regular;
+  font-family: 'Asap', sans-serif;
 }
 
 .nav-bar {
