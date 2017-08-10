@@ -1,6 +1,11 @@
 /* Stylesheet for index.html */
 
+html {
+  display: flex;
+}
+
 body {
+  display: flex;
   margin: 0;
 }
 
@@ -302,14 +307,12 @@ hr {
 
 .about-banner .content {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  max-width: 1200px;
+  max-width: 1100px;
+  margin-bottom: 70px;
 }
 
 .about-banner .about-content {
   max-width: 660px;
-  margin: 70px 150px 70px 0px;
 }
 
 .about-banner .about-header {
