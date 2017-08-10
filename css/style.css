@@ -1,11 +1,6 @@
 /* Stylesheet for index.html */
 
-html {
-  display: flex;
-}
-
 body {
-  display: flex;
   margin: 0;
 }
 
@@ -293,16 +288,10 @@ input:-ms-input-placeholder {
 /* styling for about page */
 
 /* styling for about banner elements */
-hr {
-  height: 1px;
-  width: 100%;
-  border: 0;
-  background-color: #999999;
-}
-
 .about-banner {
   flex-direction: row;
   justify-content: space-around;
+  box-shadow: 0 -2px 0 0 #999999;
 }
 
 .about-banner .content {
@@ -313,6 +302,7 @@ hr {
 
 .about-banner .about-content {
   max-width: 660px;
+  padding-right: 5vw;
 }
 
 .about-banner .about-header {
